@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#landing-page {
+  height: 100%;
+  padding: 20% 0 0 20%;
+  background-color: azure;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  min-height: 80%;
+}
+
+header {
+  background-color: #397;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  height: 100%;
+}
+header a {
+  color: antiquewhite;
+  text-decoration: none;
+  width: 100%;
+}
+header a:visited {
+  color: antiquewhite;
+}
+header li {
+  width: 100%;
+  padding: 1em;
+}
+header li:hover {
+  color: white;
+  background-color: #37a480;
+}
+
+main {
+  text-align: center;
+  background-color: lightgrey;
+  height: 100%;
+  width: 100%;
+}
+main div {
+  padding: 10%;
+}
+
+aside {
+  text-align: center;
+  background-color: lightblue;
+  height: 100%;
+  width: 100%;
+}
+aside div {
+  padding: 20%;
+}
+
+footer {
+  text-align: center;
+  background-color: grey;
+  min-height: 20%;
+  width: 100%;
+}
+footer div {
+  padding: 3%;
+}
+
+/*# sourceMappingURL=styles.css.map */
