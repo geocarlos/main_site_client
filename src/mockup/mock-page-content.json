@@ -1,14 +1,30 @@
 {
-    "home":{
-        "title": "Home",
-        "content": "This is the home page. It will be below the Landing page, which is supposed to have only the site name and logo"
+    "en": {
+        "home":{
+            "title": "Home",
+            "content": "This is the home page. It will be below the Landing page, which is supposed to have only the site name and logo"
+        },
+        "about":{
+            "title": "About me",
+            "content": "This is a page where I will write about who I am, what I have studied, and what I work with."
+        },
+        "blog":{
+            "title": "Blog",
+            "content": "This page will have a list of posts, and one featured post."
+        }
     },
-    "about":{
-        "title": "About me",
-        "content": "This is a page where I will write about who I am, what I have studied, and what I work with."
-    },
-    "blog":{
-        "title": "Blog",
-        "content": "This page will have a list of posts, a one featured post."
+    "pt": {
+        "home":{
+            "title": "Início",
+            "content": "Esta é a página inicial. Ficará abaixo da Landing page, que deve ter apenas o nome do site e a logo"
+        },
+        "about":{
+            "title": "Quem sou",
+            "content": "Esta é uma página onde escreverei sobre quem sou, o que estudei e com o que trabalho."
+        },
+        "blog":{
+            "title": "Blog",
+            "content": "Esta página terá uma lista de posts e apresentará um post."
+        }
     }
 }

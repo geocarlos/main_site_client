@@ -5,11 +5,6 @@ body{
     scroll-behavior: smooth;
 }
 
-.app-root{
-    margin: 0;
-    padding: 0;
-}
-
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -25,14 +20,14 @@ body{
     h1{
         padding: 20%;
     }
-    span{
+    span a{
         margin-left: 50%;
+        color: #397;
     }
 }
 
 header{
     background-color: azure;
-    position: relative;
     grid-column: 1 / 13;
     ul{
         display: grid;
@@ -61,6 +56,10 @@ header{
     }
 }
 
+#switch{
+    grid-column: 5 / 6;
+}
+
 nav{
     background-color: #397;
     position: fixed;
@@ -71,18 +70,21 @@ nav{
 main{
     background-color: lightgrey;
     grid-column: 1 / 10;
-    height: 90vh;
+    min-height: 90vh;
     h1{
         margin-top: 2em;
     }
     div{
         padding: 10%;
     }
+    .blog-list-item{
+        padding: 2px;
+    }
 }
 
 aside{
     text-align: center;
-    background-color: lightblue;
+    background-color: lightgrey;
     grid-column: 10 / 13;
     height: 90vh;
     div{

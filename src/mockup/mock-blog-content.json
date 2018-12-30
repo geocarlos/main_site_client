@@ -1,14 +1,36 @@
-[
-    {
-        "title": "Use of internet in Brazil",
-        "content": "Brazil has over 204 million inhabitants, and according to EBC (Empresa Brasil de Comunicação), 49.4 percent of these people have access to the internet. That means to say that at least 100 million Brazilians use the Internet, and there may be a significant number among them interested in your product or service."
-    },
-    {
-        "title": "If you want to run business in Brazil",
-        "content": "However, if you consider trying to reach Brazilian clients/customers, there is something important that you must know: Brazilians love English names, but they do not like to speak, write, listen or read in English or, maybe, in any foreign languages. According to O Globo, only 5 percent of Brazilians are proficient in English, and only 36 percent of those who claim to speak English fluently are actually fluent. Therefore, having your business website, app, catalogues, brochures, etc. translated in Portuguese is very important and probably crucial for your business to succeed in Brazil."
-    },
-    {
-        "title": "Important to communicate in Portuguese",
-        "content": "In order for people to feel safe about your business and product or service, you must have a fluent communication with them. Do not risk your business’s success by using machine translation or translation done by bad professionals. Please consider contacting me in order to know how I may help you have your business website, app or brochure translated into fluent and natural Brazilian Portuguese. In case you need translation for other languages, please consider visiting and creating an account on ICanLocalize. Once there, search for English-Portuguese translator Wildcat (which is my username there) and invite me to apply for your project."
-    }
-]
+{
+    "en": [
+        {
+            "id": "1en",
+            "title": "Use of internet in Brazil",
+            "content": "Brazil has over 204 million inhabitants, and according to EBC (Empresa Brasil de Comunicação), 49.4 percent of these people have access to the internet. That means to say that at least 100 million Brazilians use the Internet, and there may be a significant number among them interested in your product or service."
+        },
+        {
+            "id": "2en",
+            "title": "If you want to run business in Brazil",
+            "content": "However, if you consider trying to reach Brazilian clients/customers, there is something important that you must know: Brazilians love English names, but they do not like to speak, write, listen or read in English or, maybe, in any foreign languages. According to O Globo, only 5 percent of Brazilians are proficient in English, and only 36 percent of those who claim to speak English fluently are actually fluent. Therefore, having your business website, app, catalogues, brochures, etc. translated in Portuguese is very important and probably crucial for your business to succeed in Brazil."
+        },
+        {
+            "id": "3en",
+            "title": "Important to communicate in Portuguese",
+            "content": "In order for people to feel safe about your business and product or service, you must have a fluent communication with them. Do not risk your business’s success by using machine translation or translation done by bad professionals. Please consider contacting me in order to know how I may help you have your business website, app or brochure translated into fluent and natural Brazilian Portuguese. In case you need translation for other languages, please consider visiting and creating an account on ICanLocalize. Once there, search for English-Portuguese translator Wildcat (which is my username there) and invite me to apply for your project."
+        }
+    ],
+    "pt": [
+        {
+            "id": "1pt",
+            "title": "Sobre CreateJS",
+            "content": "Conheci sobre a CreateJS através de um livro intitulado 3D Game Programming For Kids, de Chris Strom, um livro que ensina programação através do desenvolvimento de jogos em 3D com JavaScript, fazendo uso da biblioteca ThreeJS, frequentemente chamada de \"a biblioteca 3D para a WebGL\". Os exemplos que podem ser vistos no site www.threejs.org são impressionantes. Para aprofundar meu conhecimento sobre essa biblioteca, estou estudando agora o livro Learning Three.js - The JavaScript 3D Library for WebGL, de Jos Dirksen."
+        },
+        {
+            "id": "2pt",
+            "title": "NodeJS",
+            "content": "Outra tecnologia interessante, que não é tão antiga, mas já é bastante conhecida, é o Node.js, que permite utilizar o JavaScript para desenvolvimento do lado do servidor. Assim, é possível desenvolver uma aplicação web usando apenas JavaScript, tanto do lado do servidor como do lado do cliente."
+        },
+        {
+            "id": "3pt",
+            "title": "Interesse de conectar-se",
+            "content": "Eu, por minha vez, gostaria de poder ter contato com pessoas interessadas em trocar ideias sobre desenvolvimento com JavaScript. Não sou profissional, mas estou aprendendo um pouco a cada dia. Também estudo C#, C++, PHP e, claro, Java, que são tecnologias sobre as quais também seria legal ter com quem trocar ideias. A propósito, saber C++ pode ser uma vantagem e tanto para quem pretende desenvolver com a Unreal. E C#, claro, é a grande ferramenta de quem desenvolve ou pretende desenvolver com a Unity, mas no caso da Unity, o JavaScript também serve."
+        }
+    ]
+}

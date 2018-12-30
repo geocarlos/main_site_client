@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Footer = (props) => {
+const Footer = ({ lang }) => {
     return (
         <footer>
-            <div><a href="#">Go to Top</a></div>
+            <div><a href="#">{lang === 'en' ? 'Go to Top' : 'Ir para o topo'}</a></div>
             <div>Footer</div>
         </footer>
     );
