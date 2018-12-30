@@ -5,9 +5,9 @@ const Navbar = (props) => {
         <nav>
             <div className="navigation">
                 <ul>
-                    <li><a href="#content-page">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About me</a></li>
+                    <li><a href="blog">Blog</a></li>
                 </ul>
             </div>
         </nav>

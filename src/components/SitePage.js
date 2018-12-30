@@ -8,11 +8,14 @@ const SitePage = () => {
 
     return (
         <PageContext.Consumer>
-            {({id, isHome})=>(<div className="container">
+            {({ id, isHome, pages }) => (<div className="container">
                 <Header />
                 {isHome && <HomePage />}
                 <main id="content-page">
-                    <div>Main</div>
+                    <div>
+                        <h1>{pages.home.title}</h1>
+                        <p>{pages.home.content}</p>
+                    </div>
                 </main>
                 <aside>
                     <div>Side Link List</div>

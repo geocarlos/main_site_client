@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SitePage from '../components/SitePage';
 import { PageContext } from '../contexts/PageContext';
+import pages from '../mockup/mock-page-content.json'
 
 class App extends Component {
   state = {
@@ -14,7 +15,7 @@ class App extends Component {
 
   render() {
     return (
-      <PageContext.Provider value={{id: this.state.page, isHome: this.state.isHome}}>
+      <PageContext.Provider value={{id: this.state.page, isHome: this.state.isHome, pages}}>
         <SitePage />
       </PageContext.Provider>
     );
