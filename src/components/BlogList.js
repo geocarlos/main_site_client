@@ -5,7 +5,7 @@ import { PageContext } from '../contexts/PageContext';
 const BlogList = () => {
     return (
         <PageContext.Consumer>
-            {({ posts, lang, selectPost, post }) => (
+            {({ posts, lang, selectPost }) => (
                 posts[lang].map(post => (<div className='blog-list-item' key={post.id}>
                     <h3><Link
                         to={`/blog/${post.id}`}
