@@ -5,6 +5,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import pages from '../mockup/mock-page-content.json';
 import posts from '../mockup/mock-blog-content.json';
 
+const title = {
+  en: 'Through Letters & Code',
+  pt: 'Por Letras & Código'
+}
+
 class App extends Component {
 
   state = {
@@ -15,10 +20,15 @@ class App extends Component {
 
   switchLang = (lang) => {
     this.setState({lang});
+    document.title = title[lang];
   }
 
   selectPost = (id, lang) => {
     this.setState({post: posts[lang].filter(post => post.id === id)[0]});
+  }
+
+  componentDidMount(){
+    this.setState({lang: window.navigator.language.substring(0,2)})
   }
 
   render() {

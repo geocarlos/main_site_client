@@ -1,8 +1,12 @@
+@import 'mixins';
+
+
 html,
 body{
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: lightgrey;
 }
 
 .container{
@@ -23,6 +27,7 @@ body{
     span a{
         margin-left: 50%;
         color: #397;
+        font-weight: bold;
     }
 }
 
@@ -48,7 +53,7 @@ header{
     }
     li{
         width: 100%;
-        padding: 1em;
+        padding: 1.2em 1em .7em 1em;
         &:hover{
             color: white;
             background-color: lighten(#397, 3);
@@ -57,7 +62,18 @@ header{
 }
 
 #switch{
-    grid-column: 5 / 6;
+    grid-column: 6 / 7;
+    &:hover{
+        background-color: #397;
+    }
+    button{
+        border-radius: .5em;
+        padding: .5em;
+        border-style: solid;
+        width: 7em;
+        background-color: lighten(#397, 5);
+        color: whitesmoke;
+    }
 }
 
 nav{
@@ -68,27 +84,38 @@ nav{
 }
 
 main{
-    background-color: lightgrey;
-    grid-column: 1 / 10;
-    min-height: 90vh;
+    background-color: transparent;
+    grid-column: 2 / 10;
+    height: 90vh;
+    @include scrollConfig;
     h1{
         margin-top: 2em;
     }
     div{
         padding: 10%;
     }
-    .blog-list-item{
-        padding: 2px;
+}
+
+.blog-list-item{
+    padding: 2% 0 0 0;
+    a{
+        color: #333;
+        text-decoration: none;
     }
+}
+
+.post-content{
+    padding: 2% 0 0 0;
 }
 
 aside{
     text-align: center;
-    background-color: lightgrey;
-    grid-column: 10 / 13;
-    height: 90vh;
+    background-color: transparent;
+    grid-column: 10 / 12;
+    min-height: 90vh;
+    @include scrollConfig;
     div{
-        padding: 20%;
+        padding: 7em 0 0 0;
     }
 }
 

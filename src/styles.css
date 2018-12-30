@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
+  background-color: lightgrey;
 }
 
 .container {
@@ -24,6 +25,7 @@ body {
 #home span a {
   margin-left: 50%;
   color: #397;
+  font-weight: bold;
 }
 
 header {
@@ -49,7 +51,7 @@ header a:visited {
 }
 header li {
   width: 100%;
-  padding: 1em;
+  padding: 1.2em 1em 0.7em 1em;
 }
 header li:hover {
   color: white;
@@ -57,7 +59,18 @@ header li:hover {
 }
 
 #switch {
-  grid-column: 5/6;
+  grid-column: 6/7;
+}
+#switch:hover {
+  background-color: #397;
+}
+#switch button {
+  border-radius: 0.5em;
+  padding: 0.5em;
+  border-style: solid;
+  width: 7em;
+  background-color: #39ac86;
+  color: whitesmoke;
 }
 
 nav {
@@ -68,9 +81,15 @@ nav {
 }
 
 main {
-  background-color: lightgrey;
-  grid-column: 1/10;
-  min-height: 90vh;
+  background-color: transparent;
+  grid-column: 2/10;
+  height: 90vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+main::-webkit-scrollbar {
+  width: 0 !important;
 }
 main h1 {
   margin-top: 2em;
@@ -78,18 +97,33 @@ main h1 {
 main div {
   padding: 10%;
 }
-main .blog-list-item {
-  padding: 2px;
+
+.blog-list-item {
+  padding: 2% 0 0 0;
+}
+.blog-list-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-content {
+  padding: 2% 0 0 0;
 }
 
 aside {
   text-align: center;
-  background-color: lightgrey;
-  grid-column: 10/13;
-  height: 90vh;
+  background-color: transparent;
+  grid-column: 10/12;
+  min-height: 90vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+aside::-webkit-scrollbar {
+  width: 0 !important;
 }
 aside div {
-  padding: 20%;
+  padding: 7em 0 0 0;
 }
 
 footer {
