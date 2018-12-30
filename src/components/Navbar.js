@@ -1,16 +1,24 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { PageContext } from '../contexts/PageContext';
+import { capitalize as cap } from '../helpers/helpers';
 
 const Navbar = (props) => {
     return (
-        <nav>
-            <div className="navigation">
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About me</a></li>
-                    <li><a href="blog">Blog</a></li>
-                </ul>
-            </div>
-        </nav>
+        <PageContext.Consumer>
+            {({ titles }) => (
+                <nav>
+                    <div className="navigation">
+                        <ul>
+                            {titles.map(title => (
+                                <li key={title}><Link to={title}>{cap(title)}</Link></li>
+                            ))}
+                        </ul>
+                    </div>
+                </nav>
+            )
+            }
+        </PageContext.Consumer>
     );
 }
 

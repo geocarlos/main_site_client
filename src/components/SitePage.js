@@ -4,17 +4,17 @@ import HomePage from './HomePage';
 import Footer from './Footer';
 import { PageContext } from '../contexts/PageContext';
 
-const SitePage = () => {
+const SitePage = ({ page, isHome }) => {
 
     return (
         <PageContext.Consumer>
-            {({ id, isHome, pages }) => (<div className="container">
+            {({ pages }) => (<div className="container">
                 <Header />
                 {isHome && <HomePage />}
                 <main id="content-page">
                     <div>
-                        <h1>{pages.home.title}</h1>
-                        <p>{pages.home.content}</p>
+                        <h1>{pages[page].title}</h1>
+                        <p>{pages[page].content}</p>
                     </div>
                 </main>
                 <aside>
