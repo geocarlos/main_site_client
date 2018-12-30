@@ -4,6 +4,8 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   background-color: lightgrey;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1em;
 }
 
 .container {
@@ -78,6 +80,7 @@ nav {
   position: fixed;
   width: 100vw;
   top: 0;
+  box-shadow: 1px 5px 3px #3735;
 }
 
 main {
