@@ -1,6 +1,5 @@
 @import 'mixins';
 
-
 html,
 body{
     height: 100%;
@@ -126,7 +125,18 @@ footer{
     text-align: center;
     background-color: grey;
     grid-column: 1 / 13;
+    a{
+        color: #356;
+        text-align: right;
+        text-decoration: none;
+        font-weight: bold;
+    }
     div{
         padding: 3%;
     }
+}
+
+.to-top{
+    padding-top: .2em;
+    text-align: end;
 }
