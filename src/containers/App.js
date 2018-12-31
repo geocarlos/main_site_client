@@ -42,7 +42,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({ lang: window.navigator.language.substring(0, 2) })
+    let lang = window.navigator.language.substring(0, 2);
+    if(lang === 'pt' || lang === 'en'){
+      this.setState({ lang });
+    } else {
+      this.setState({ lang: 'en' });
+    }
     const page = window.location.pathname;
     this.checkHome(page === '/home' || page === '/');
   }
