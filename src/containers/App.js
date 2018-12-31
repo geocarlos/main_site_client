@@ -45,6 +45,7 @@ class App extends Component {
     let lang = window.navigator.language.substring(0, 2);
     if(lang === 'pt' || lang === 'en'){
       this.setState({ lang });
+      document.title = title[lang];
     } else {
       this.setState({ lang: 'en' });
     }

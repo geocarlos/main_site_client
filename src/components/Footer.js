@@ -5,7 +5,7 @@ const Footer = ({ lang }) => {
     return (
         <PageContext.Consumer>
             {({ lang })=>(<footer>
-                <div class='to-top'><a href="#">{lang === 'en' ? 'Go to Top' : 'Ir para o topo'}</a></div>
+                <div className='to-top'><a href="#">{lang === 'en' ? 'Go to Top' : 'Ir para o topo'}</a></div>
                 <div>Geocarlos L. Alves, 2018</div>
             </footer>)}
         </PageContext.Consumer>
