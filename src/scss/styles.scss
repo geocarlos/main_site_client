@@ -1,5 +1,8 @@
 @import 'mixins';
 
+$navbarBgColor: #387;
+$headerTxtColor: #397;
+
 html,
 body{
     height: 100%;
@@ -19,25 +22,44 @@ body{
 }
 
 #home{
-    background-color: azure;
+    background-color: #a0ffff0f;
     grid-column: 1 / 13;
     height: 100vh;
     h1{
-        padding: 20%;
+        padding: 15% 0 16% 10%;
+        color:$headerTxtColor;
+        text-shadow: 1px 1px #333;
+        font-size: 3.5em;
     }
-    span a{
-        margin-left: 50%;
-        color: #397;
-        font-weight: bold;
+    div {
+        text-align: center;
+        width: 100%;
+    
+        a{
+            color:$headerTxtColor;
+            text-shadow: 2px 2px #333;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        img{
+            width: 1.8em;
+            color: #387;
+            &:hover{
+                width: 2em;
+            }
+        }
     }
 }
 
 header{
-    background-color: azure;
+    background-image: url('assets/top_code_background.png');
+    background-color: #f0fffe90;
+    background-blend-mode: lighten;
     grid-column: 1 / 13;
+    box-shadow: 1px 5px 3px #3755;
     ul{
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(8, 1fr);
         padding: 0;
         margin: 0;
         text-align: center;
@@ -54,31 +76,42 @@ header{
     }
     li{
         width: 100%;
-        padding: 1.2em 1em .7em 1em;
+        padding: 1em 1em .3em 1em;
         &:hover{
             color: white;
-            background-color: lighten(#397, 3);
+            background-color: lighten($navbarBgColor, 3);
         }
     }
 }
 
-#switch{
-    grid-column: 6 / 7;
+#logo {
+    padding-top: 2px;
+    height: 2.8em;
     &:hover{
-        background-color: #397;
+        background-color: $navbarBgColor;
+    }
+    img {
+        width: 4.3em;
+    }
+}
+
+#switch{
+    grid-column: 7 / 8;
+    &:hover{
+        background-color: $navbarBgColor;
     }
     button{
         border-radius: .5em;
         padding: .5em;
         border-style: solid;
         width: 7em;
-        background-color: lighten(#397, 5);
+        background-color: lighten($navbarBgColor, 5);
         color: whitesmoke;
     }
 }
 
 nav{
-    background-color: #397;
+    background-color: $navbarBgColor;
     position: fixed;
     width: 100vw;
     top: 0;

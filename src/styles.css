@@ -17,26 +17,44 @@ body {
 }
 
 #home {
-  background-color: azure;
+  background-color: #a0ffff0f;
   grid-column: 1/13;
   height: 100vh;
 }
 #home h1 {
-  padding: 20%;
-}
-#home span a {
-  margin-left: 50%;
+  padding: 15% 0 16% 10%;
   color: #397;
+  text-shadow: 1px 1px #333;
+  font-size: 3.5em;
+}
+#home div {
+  text-align: center;
+  width: 100%;
+}
+#home div a {
+  color: #397;
+  text-shadow: 2px 2px #333;
   font-weight: bold;
+  font-size: 2em;
+}
+#home div img {
+  width: 1.8em;
+  color: #387;
+}
+#home div img:hover {
+  width: 2em;
 }
 
 header {
-  background-color: azure;
+  background-image: url("assets/top_code_background.png");
+  background-color: #f0fffe90;
+  background-blend-mode: lighten;
   grid-column: 1/13;
+  box-shadow: 1px 5px 3px #3755;
 }
 header ul {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   padding: 0;
   margin: 0;
   text-align: center;
@@ -53,30 +71,41 @@ header a:visited {
 }
 header li {
   width: 100%;
-  padding: 1.2em 1em 0.7em 1em;
+  padding: 1em 1em 0.3em 1em;
 }
 header li:hover {
   color: white;
-  background-color: #37a480;
+  background-color: #379381;
+}
+
+#logo {
+  padding-top: 2px;
+  height: 2.8em;
+}
+#logo:hover {
+  background-color: #387;
+}
+#logo img {
+  width: 4.3em;
 }
 
 #switch {
-  grid-column: 6/7;
+  grid-column: 7/8;
 }
 #switch:hover {
-  background-color: #397;
+  background-color: #387;
 }
 #switch button {
   border-radius: 0.5em;
   padding: 0.5em;
   border-style: solid;
   width: 7em;
-  background-color: #39ac86;
+  background-color: #3a9b87;
   color: whitesmoke;
 }
 
 nav {
-  background-color: #397;
+  background-color: #387;
   position: fixed;
   width: 100vw;
   top: 0;

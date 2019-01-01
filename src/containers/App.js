@@ -3,6 +3,7 @@ import SitePage from '../components/SitePage';
 import BlogPage from '../components/BlogPage';
 import Post from './Post';
 import Header from '../components/Header';
+import SideList from '../components/SideList';
 import Footer from '../components/Footer';
 import { PageContext } from '../contexts/PageContext';
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -90,9 +91,8 @@ class App extends Component {
               <Post page='post' id={match.params.id} />
             )} />
 
-            <aside>
-              <div>Side Link List</div>
-            </aside>
+            <SideList />
+
             <Footer />
 
           </div>

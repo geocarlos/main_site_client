@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { PageContext } from '../contexts/PageContext';
+import DownIcon from '../assets/down_icon.svg';
 
 const Header = () => {
     const text = {
@@ -19,8 +20,10 @@ const Header = () => {
                 <header>
                     <Navbar />
                     {isHome && <div id="home">
-                        <h1>{text[lang].title}</h1>
-                        <span><a href="#content-page">{text[lang].view}</a></span>
+                        <h1>{`{ ${text[lang].title} }`}</h1>
+                        <div><a href="#content-page">
+                            <img src={DownIcon} alt=""/>
+                        </a></div>
                     </div>}
                 </header>
             )}
