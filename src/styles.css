@@ -31,18 +31,13 @@ body {
   text-align: center;
   width: 100%;
 }
-#home div a {
-  color: #397;
-  text-shadow: 2px 2px #333;
-  font-weight: bold;
-  font-size: 2em;
-}
 #home div img {
-  width: 1.8em;
+  width: 3.5em;
   color: #387;
 }
 #home div img:hover {
-  width: 2em;
+  width: 3.7em;
+  cursor: pointer;
 }
 
 header {
@@ -163,19 +158,18 @@ footer {
   background-color: grey;
   grid-column: 1/13;
 }
-footer a {
+footer div {
   color: #356;
-  text-align: right;
   text-decoration: none;
   font-weight: bold;
-}
-footer div {
   padding: 3%;
 }
-
-.to-top {
+footer .to-top {
   padding-top: 0.2em;
   text-align: end;
+}
+footer .to-top:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -34,18 +34,12 @@ body{
     div {
         text-align: center;
         width: 100%;
-    
-        a{
-            color:$headerTxtColor;
-            text-shadow: 2px 2px #333;
-            font-weight: bold;
-            font-size: 2em;
-        }
         img{
-            width: 1.8em;
+            width: 3.5em;
             color: #387;
             &:hover{
-                width: 2em;
+                width: 3.7em;
+                cursor: pointer;
             }
         }
     }
@@ -121,7 +115,7 @@ nav{
 main{
     background-color: transparent;
     grid-column: 2 / 10;
-    height: 90vh;
+    height: 90vh; 
     @include scrollConfig;
     h1{
         margin-top: 2em;
@@ -158,18 +152,17 @@ footer{
     text-align: center;
     background-color: grey;
     grid-column: 1 / 13;
-    a{
+    div{
         color: #356;
-        text-align: right;
         text-decoration: none;
         font-weight: bold;
-    }
-    div{
         padding: 3%;
     }
-}
-
-.to-top{
-    padding-top: .2em;
-    text-align: end;
+    .to-top{
+        padding-top: .2em;
+        text-align: end;
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }

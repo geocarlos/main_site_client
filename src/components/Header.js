@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import { PageContext } from '../contexts/PageContext';
 import DownIcon from '../assets/down_icon.svg';
+import { goToYPos } from '../helpers/helpers';
 
 const Header = () => {
     const text = {
@@ -21,9 +22,11 @@ const Header = () => {
                     <Navbar />
                     {isHome && <div id="home">
                         <h1>{`{ ${text[lang].title} }`}</h1>
-                        <div><a href="#content-page">
-                            <img src={DownIcon} alt=""/>
-                        </a></div>
+                        <div>
+                            <img 
+                                src={DownIcon} 
+                                onClick={()=> goToYPos(window.document.querySelector('header').scrollHeight)} 
+                                alt="Go-Down icon"/></div>
                     </div>}
                 </header>
             )}
